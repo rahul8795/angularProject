@@ -1,0 +1,6 @@
+<label for="fname" >First Name : </label>
+<input type="text" name = "fname" placeholder="First Name" [(ngModel)]="name">
+
+<p>{{name}}</p>
+
+<button (click)="resetName()" [disabled]="checkName()">Reset Name</button>

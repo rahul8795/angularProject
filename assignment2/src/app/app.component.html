@@ -1,0 +1,11 @@
+<!--<p>Server name {{ServerName}} with Pid {{ServerPID}} is {{ServerStatus}}</p>-->
+
+<h1>Input Server Information</h1>
+<input type="text" placeholder="Server Name" [(ngModel)]="ServerName">
+<h3>Display Server Information</h3>
+<p>{{ServerName}}</p>
+<p>{{ServerPID}}</p>
+<p>{{ServerStatus}}</p>
+
+
+<button [disabled]="buttonState" (click)="toggleServerStatus()">Toggle Server Status</button>

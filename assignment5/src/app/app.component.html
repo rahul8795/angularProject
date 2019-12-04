@@ -1,0 +1,7 @@
+
+<p *ngIf="flag; else elseblock">Hello! Good Morning</p>
+<ng-template #elseblock>
+  <p>Hello! Good Evening</p>
+</ng-template>
+<button (click)="toggleParagraph()">Toggle Paragraph</button>
+<p *ngFor="let click of count" [ngStyle]="{color: getLength()}">{{click}}</p>
